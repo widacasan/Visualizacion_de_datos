@@ -1,0 +1,227 @@
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Estilos para el cuerpo del documento
+ */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F1F5F8;
+  height: 100vh;
+}
+
+/**
+ * Estilos para el título principal
+ */
+h1 {
+  text-align: center;
+  color: #333;
+  padding: 20px 0;
+}
+
+/**
+ * Estilos para los títulos secundarios
+ */
+h2 {
+  text-align: center;
+  color: #333;
+  padding: 12px 0;
+  margin-bottom: 10px;
+}
+
+/**
+ * Estilos para el contenedor principal de la aplicación
+ */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+/**
+ * Estilos para el contenedor principal de la aplicación
+ */
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+/**
+ * Estilos para la barra lateral
+ */
+.sidebar {
+  flex-basis: 30%;
+  padding: 20px;
+  background-color: #E1EAF5;
+  border-radius: 10px;
+
+  animation: slideInLeft 0.5s ease-out;
+}
+
+/**
+ * Animación para deslizar la barra lateral desde la izquierda
+ */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/**
+ * Estilos para el contenedor del gráfico
+ */
+.chart-container {
+  flex-basis: 65%;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+/**
+ * Animación para desvanecer el contenedor del gráfico al aparecer
+ */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/**
+ * Estilos para pantallas pequeñas (máximo 768px)
+ */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-basis: auto;
+    margin-bottom: 10px;
+  }
+
+  .chart-container {
+    flex-basis: auto;
+  }
+}
+
+/**
+ * Estilos para el contenedor del selector de datos
+ */
+.select-container {
+  margin-bottom: 10px;
+}
+
+/**
+ * Estilos para el componente DateRangePicker de React Dates
+ */
+.react-dates {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  animation: slideInRight 0.5s ease-out;
+}
+
+/**
+ * Animación para deslizar el componente DateRangePicker desde la derecha
+ */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/**
+ * Estilos para el input del componente DateRangePicker
+ */
+.react-dates .DateRangePickerInput {
+  width: 100%;
+}
+
+/**
+ * Estilos para el input de fecha del componente DateRangePicker
+ */
+.react-dates .DateInput {
+  width: 100%;
+}
+
+/**
+ * Estilos para el input de fecha del componente DateRangePicker
+ */
+.react-dates .DateInput_input {
+  width: 100%;
+}
+
+/**
+ * Estilos para el contenedor del componente DateRangePicker con borde
+ */
+.react-dates .DateRangePickerInput__withBorder {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/**
+ * Estilos para el contenedor del componente DateRangePicker deshabilitado
+ */
+.react-dates .DateRangePickerInput__disabled {
+  background-color: #f2f2f2;
+}
+
+/**
+ * Estilos para el icono del calendario en el componente DateRangePicker
+ */
+.react-dates .DateRangePickerInput_calendarIcon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+/**
+ * Estilos para el icono SVG del calendario en el componente DateRangePicker
+ */
+.react-dates .DateRangePickerInput_calendarIcon_svg {
+  fill: #999;
+  width: 16px;
+  height: 16px;
+}
+
+/**
+ * Estilos para el contenedor del gráfico
+ */
+.chart {
+  width: 100%;
+  height: 400px;
+  background-color: #E1EAF5;
+  border-radius: 10px;
+  padding: 20px;
+  animation: slideInUp 0.5s ease-out;
+}
+
+/**
+ * Animación para deslizar el gráfico hacia arriba
+ */
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
