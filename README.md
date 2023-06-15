@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Visualización de Datos React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una aplicación web desarrollada en React que permite visualizar datos de manera interactiva a través de diferentes tipos de gráficos. Proporciona a los usuarios la capacidad de seleccionar conjuntos de datos, tipos de gráficos y rangos de fechas para explorar y analizar la información de manera efectiva.
 
-## Available Scripts
+## Características principales
 
-In the project directory, you can run:
+- `Selección de gráficos:` Permite a los usuarios elegir entre una variedad de tipos de gráficos para visualizar los datos de manera efectiva.
 
-### `npm start`
+- `Selección de datos:` Proporciona conjuntos de datos predefinidos y la capacidad de cargar conjuntos de datos personalizados para una visualización personalizada.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- `Filtrado por rango de fechas:` Permite a los usuarios establecer un rango de fechas específico para analizar tendencias y patrones temporales.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `Interactividad y personalización:` Ofrece una experiencia interactiva y la posibilidad de personalizar colores, etiquetas y estilos de los gráficos.
 
-### `npm test`
+- `Facilidad de uso:` Interfaz intuitiva y amigable que facilita la selección y configuración de gráficos, datos y rangos de fechas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias utilizadas
 
-### `npm run build`
+- `React:` Un framework de JavaScript utilizado para construir interfaces de usuario interactivas y reutilizables.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `JavaScript:` El lenguaje de programación principal utilizado en el proyecto para la lógica y funcionalidad del lado del cliente.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `HTML:` Se utiliza para estructurar y presentar el contenido web.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `CSS:` Se utiliza para aplicar estilos y diseños al proyecto.
 
-### `npm run eject`
+- `Chart.js:` Una biblioteca de gráficos de código abierto que proporciona una amplia gama de gráficos interactivos y personalizables.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `React Datepicker:` Una biblioteca de componentes de selección de fechas para React, utilizada para el componente de selección de rango de fechas en el proyecto.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Instalación y uso
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clona este repositorio en tu máquina local.
+2. Navega hasta el directorio del proyecto.
+3. Ejecuta el siguiente comando para instalar las dependencias:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ```bash
+npm install
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Ejecuta el siguiente comando para iniciar la aplicación:
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Abre tu navegador y accede a http://localhost:3000 para ver la aplicación en funcionamiento.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Estructura del Proyecto
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+├── public
+│   ├── index.html
+│   └── ...
+├── src
+│   ├── components
+│   │   ├── Chart.js
+│   │   ├── ChartSelector.js
+│   │   ├── DataSelector.js
+│   │   ├── DateRangeFilter.js
+│   │   └── ...
+│   ├── data
+│   │   └── data.json
+│   ├── styles.css
+│   └── App.js
+├── package.json
+└── README.md
 
-### Making a Progressive Web App
+El proyecto está estructurado de la siguiente manera:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `public/:` Contiene los archivos HTML estáticos y otros recursos públicos.
+- `src/:` Contiene los archivos fuente de la aplicación.
+- components/: Contiene los componentes de React utilizados en la aplicación.
+- `data/:` Contiene los archivos de datos utilizados en la visualización.
+- `styles.css:` Archivo CSS con los estilos de la aplicación.
+- `App.js:` Componente principal de la aplicación.
+- `index.js:` Punto de entrada de la aplicación.
