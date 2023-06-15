@@ -1,27 +1,222 @@
 [
   {
-      "date": "2023-01-01",
-      "sales": 100,
-      "users": 20
+    "date": "2023-01-04",
+    "ventas": 110,
+    "usuarios": 22,
+    "productos": 4,
+    "países": 5,
+    "ingresos": 950,
+    "pedidos": 8,
+    "devoluciones": 1,
+    "calificaciónPromedio": 4.2
   },
   {
-      "date": "2023-02-01",
-      "sales": 120,
-      "users": 25
+    "date": "2023-01-12",
+    "ventas": 130,
+    "usuarios": 26,
+    "productos": 5,
+    "países": 3,
+    "ingresos": 1100,
+    "pedidos": 9,
+    "devoluciones": 2,
+    "calificaciónPromedio": 4.7
   },
   {
-    "date": "2023-03-01",
-    "sales": 80, 
-    "users": 30  
-},
-{ 
-    "date": "2023-04-01",
-    "sales": 200,
-    "users": 40  
-},
-{ 
-    "date": "2023-05-01",
-    "sales": 150,
-    "users": 35 
-} 
+    "date": "2023-01-25",
+    "ventas": 90,
+    "usuarios": 18,
+    "productos": 3,
+    "países": 4,
+    "ingresos": 800,
+    "pedidos": 6,
+    "devoluciones": 1,
+    "calificaciónPromedio": 4.0
+  },
+  {
+    "date": "2023-02-05",
+    "ventas": 120,
+    "usuarios": 24,
+    "productos": 4,
+    "países": 3,
+    "ingresos": 1050,
+    "pedidos": 8,
+    "devoluciones": 2,
+    "calificaciónPromedio": 4.5
+  },
+  {
+    "date": "2023-02-15",
+    "ventas": 100,
+    "usuarios": 20,
+    "productos": 3,
+    "países": 6,
+    "ingresos": 900,
+    "pedidos": 7,
+    "devoluciones": 1,
+    "calificaciónPromedio": 4.3
+  },
+  {
+    "date": "2023-02-22",
+    "ventas": 140,
+    "usuarios": 28,
+    "productos": 5,
+    "países": 4,
+    "ingresos": 1200,
+    "pedidos": 10,
+    "devoluciones": 2,
+    "calificaciónPromedio": 4.8
+  },
+  {
+    "date": "2023-03-04",
+    "ventas": 115,
+    "usuarios": 23,
+    "productos": 4,
+    "países": 7,
+    "ingresos": 1000,
+    "pedidos": 8,
+    "devoluciones": 1,
+    "calificaciónPromedio": 4.4
+  },
+  {
+    "date": "2023-03-13",
+    "ventas": 135,
+    "usuarios": 27,
+    "productos": 5,
+    "países": 5,
+    "ingresos": 1150,
+    "pedidos": 9,
+    "devoluciones": 2,
+    "calificaciónPromedio": 4.6
+  },
+  {
+    "date": "2023-03-21",
+    "ventas": 95,
+    "usuarios": 19,
+    "productos": 3,
+    "países": 6,
+    "ingresos": 850,
+    "pedidos": 6,
+    "devoluciones": 1,
+    "calificaciónPromedio": 4.1
+  },
+  {
+    "date": "2023-04-02",
+    "ventas": 125,
+    "usuarios": 25,
+    "productos": 4,
+    "países": 4,
+    "ingresos": 1100,
+    "pedidos": 8,
+    "devoluciones": 2,
+    "calificaciónPromedio": 4.7
+  },
+  {
+    "date": "2023-04-09",
+    "ventas": 105,
+    "usuarios": 21,
+    "productos": 3,
+    "países": 5,
+    "ingresos": 950,
+    "pedidos": 7,
+    "devoluciones": 1,
+    "calificaciónPromedio": 4.2
+  },
+  {
+    "date": "2023-04-18",
+    "ventas": 145,
+    "usuarios": 29,
+    "productos": 5,
+    "países": 4,
+    "ingresos": 1250,
+    "pedidos": 10,
+    "devoluciones": 2,
+    "calificaciónPromedio": 4.9
+  },
+  {
+    "date": "2023-04-27",
+    "ventas": 110,
+    "usuarios": 22,
+    "productos": 4,
+    "países": 6,
+    "ingresos": 1000,
+    "pedidos": 8,
+    "devoluciones": 1,
+    "calificaciónPromedio": 4.4
+  },
+  {
+    "date": "2023-05-06",
+    "ventas": 130,
+    "usuarios": 26,
+    "productos": 5,
+    "países": 5,
+    "ingresos": 1150,
+    "pedidos": 9,
+    "devoluciones": 2,
+    "calificaciónPromedio": 4.6
+  },
+  {
+    "date": "2023-05-14",
+    "ventas": 90,
+    "usuarios": 18,
+    "productos": 3,
+    "países": 4,
+    "ingresos": 850,
+    "pedidos": 6,
+    "devoluciones": 1,
+    "calificaciónPromedio": 4.1
+  },
+  {
+    "date": "2023-05-23",
+    "ventas": 120,
+    "usuarios": 24,
+    "productos": 4,
+    "países": 6,
+    "ingresos": 1050,
+    "pedidos": 8,
+    "devoluciones": 2,
+    "calificaciónPromedio": 4.5
+  },
+  {
+    "date": "2023-06-01",
+    "ventas": 100,
+    "usuarios": 20,
+    "productos": 3,
+    "países": 5,
+    "ingresos": 900,
+    "pedidos": 7,
+    "devoluciones": 1,
+    "calificaciónPromedio": 4.3
+  },
+  {
+    "date": "2023-06-09",
+    "ventas": 140,
+    "usuarios": 28,
+    "productos": 5,
+    "países": 4,
+    "ingresos": 1200,
+    "pedidos": 10,
+    "devoluciones": 2,
+    "calificaciónPromedio": 4.8
+  },
+  {
+    "date": "2023-06-17",
+    "ventas": 115,
+    "usuarios": 23,
+    "productos": 4,
+    "países": 6,
+    "ingresos": 1000,
+    "pedidos": 8,
+    "devoluciones": 1,
+    "calificaciónPromedio": 4.4
+  },
+  {
+    "date": "2023-06-26",
+    "ventas": 135,
+    "usuarios": 27,
+    "productos": 5,
+    "países": 5,
+    "ingresos": 1150,
+    "pedidos": 9,
+    "devoluciones": 2,
+    "calificaciónPromedio": 4.6
+  }
 ]

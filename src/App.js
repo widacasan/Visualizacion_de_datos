@@ -1,57 +1,54 @@
-import React, { useEffect, useState } from 'react';
-import Chart from './components/Chart';
-import ChartSelector from './components/ChartSelector';
-import DataSelector from './components/DataSelector';
-import DateRangeFilter from './components/DateRangeFilter';
+import React, { useState } from "react";
+import Chart from "./components/Chart";
+import ChartSelector from "./components/ChartSelector";
+import DataSelector from "./components/DataSelector";
+import DateRangeFilter from "./components/DataRangeFilter";
+import proyectData from "./data/data.json";
+import "./styles.css"; 
 
+/**
+ * Componente principal de la aplicación.
+ * @returns {JSX.Element} Elemento JSX que representa la aplicación.
+ */
 function App() {
-    const [data, setData] = useState(
-    [
-      {
-          "date": "2023-06-12",
-          "sales": 100,
-          "users": 20
-      },
-      {
-          "date": "2023-06-13",
-          "sales": 120,
-          "users": 25
-      },
-      {
-          "date": "2023-06-18",
-          "sales": 80,
-          "users": 30
-      },
-      {
-          "date": "2023-07-01",
-          "sales": 200,
-          "users": 40
-      },
-      {
-          "date": "2023-07-01",
-          "sales": 150,
-          "users": 35
-      }
-  ]
-  );
-    const [selectedChart, setSelectedChart] = useState(null);
-    const [selectedData, setSelectedData] = useState(null);
-    const [dateRange, setDateRange] = useState({ startDate: null, endDate: null });
+  const data = proyectData;
+  const [selectedChart, setSelectedChart] = useState(null);
+  const [selectedData, setSelectedData] = useState({
+    value: "sales",
+    label: "datos de ventas por mes",
+  });
+  const [dateRange, setDateRange] = useState({
+    startDate: new Date("2023-06-14"),
+    endDate: new Date("2023-10-05"),
+  });
 
-    useEffect(() => {
-        fetch('/data/yourData.json')
-            .then((response) => response.json())
-            .then((data) => setData(data));
-    }, []);
+  return (
+    <div className="app">
+      <h1>Visualización de datos</h1>
+      <div className="container">
+        <div className="sidebar">
+          <h2>Seleccione un gráfico:</h2>
+          <ChartSelector onChartSelect={setSelectedChart} />
 
-    return (
-        <div>
-            <ChartSelector onChartSelect={setSelectedChart} />
-            <DataSelector onDataSelect={setSelectedData} />
-            <DateRangeFilter onDateRangeSelect={setDateRange} />
-            <Chart data={data} selectedChart={selectedChart} selectedData={selectedData} dateRange={dateRange} />
+          <h2>Seleccione los datos:</h2>
+          <DataSelector onDataSelect={setSelectedData} />
+
+          <h2>Seleccione el rango de fechas:</h2>
+          <DateRangeFilter onDateRangeSelect={setDateRange} />
         </div>
-    );
+        <div className="chart-container">
+          {data && (
+            <Chart
+              data={data}
+              selectedChart={selectedChart}
+              selectedData={selectedData}
+              dateRange={dateRange}
+            />
+          )}
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default App;
