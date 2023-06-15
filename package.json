@@ -1,11 +1,9 @@
 {
   "name": "data-visualization-app",
   "version": "0.1.0",
+  "author": "william david widacasan@gmail.com",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "d3": "^7.8.5",
     "react": "^18.2.0",
     "react-d3-components": "^0.9.1",
